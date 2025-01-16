@@ -21,7 +21,11 @@ Follow these steps to install and run the project locally:
    cd frontend-tbx
    ```
 
-2. **Install Dependencies**:
+---
+
+## **Run Locally**
+
+1. **Install Dependencies**:
    Using npm:
 
    ```bash
@@ -34,15 +38,35 @@ Follow these steps to install and run the project locally:
    yarn install
    ```
 
-3. **Run the Application**:
+2. **Run the Application**:
    Using npm:
 
    ```bash
    npm start
    ```
 
-4. **Access the Application**:
+3. **Access the Application**:
    Open your browser and navigate to `http://localhost:3000` (or the port specified in the terminal).
+
+---
+
+## **Run with Docker**
+
+### **1. Build the Image**
+
+First, make sure you are in the root directory of the frontend (where the `Dockerfile` is located) and run the following command to build the Docker image:
+
+```bash
+docker build -t my-frontend .
+```
+
+### **2. Run the Container**
+
+Once the image is built, run the container with the following command:
+
+```bash
+docker run -p 80:80 my-frontend
+```
 
 ---
 
